@@ -32,6 +32,8 @@ gem "redis", ">= 4.0.1"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
+gem 'pg'
+
 # Front gems
 gem "sassc-rails"
 gem "bootstrap", "~> 5.2"
