@@ -1,0 +1,11 @@
+.navigation_container {
+  height: 50px;
+  border-top: 1px solid $grey-navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_item {
+  margin: 0 10px;
+}
