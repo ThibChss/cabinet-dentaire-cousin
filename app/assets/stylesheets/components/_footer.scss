@@ -1,0 +1,55 @@
+.footer_container {
+  background: #161A30;
+  color: $clear-blue;
+  height: max-content;
+  margin-top: 50px;
+  padding: 40px 150px 10px;
+}
+
+.site__infos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+.copyright_footer {
+  text-align: center;
+  font-size: 12px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #394867;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.info_footer {
+  display: flex;
+
+  span {
+    margin-right: 20px;
+    color: $grey-navy;
+  }
+
+  &.schedule {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.info_schedule {
+  line-height: 2;
+
+  p {
+    margin: 0;
+  }
+}
+
+.site_map h5 {
+  color: $grey-navy;
+}
