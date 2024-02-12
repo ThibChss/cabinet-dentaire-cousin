@@ -69,6 +69,11 @@
       list-style-type: none;
       text-align: end;
       padding: 15px 20px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }
