@@ -4,10 +4,14 @@
   align-items: center;
   padding: 0 10px;
   justify-content: space-between;
+
+  a {
+    height: 70%;
+  }
 }
 
 .logo_navbar {
-  height: 70%;
+  height: 100%;
 }
 
 .info_office {
@@ -38,5 +42,20 @@
 
   &:nth-child(2) {
     color: $grey-navy;
+  }
+}
+
+.menu_small_screen {
+  display: none;
+  transform: scale(0.8);
+}
+
+@media (max-width: 768px) {
+  .info_office {
+    display: none;
+  }
+
+  .menu_small_screen {
+    display: flex;
   }
 }

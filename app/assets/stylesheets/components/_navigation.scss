@@ -9,3 +9,9 @@
 .nav_item {
   margin: 0 10px;
 }
+
+@media (max-width: 768px) {
+  .navigation_container {
+    display: none;
+  }
+}
