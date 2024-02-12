@@ -6,4 +6,6 @@ class PagesController < ApplicationController
   def team; end
 
   def documentation; end
+
+  def office; end
 end

@@ -1,0 +1,9 @@
+.images_office_container {
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+
+  img {
+    width: 50%;
+  }
+}

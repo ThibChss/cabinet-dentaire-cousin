@@ -13,7 +13,6 @@ export default class extends Controller {
   }
 
   clickOutside(event) {
-    event.preventDefault()
     this.menuTarget.classList.remove('active')
     this.burgerTarget.checked = false
   }
