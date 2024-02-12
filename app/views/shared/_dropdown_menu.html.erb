@@ -1,7 +1,7 @@
 <%# Small screen toggle %>
 <div class='menu_small_screen'>
   <input id="toggleChecker" type="checkbox">
-  <label id="togglerLable" for="toggleChecker">
+  <label id="togglerLable" for="toggleChecker" data-action='click->dropdown#toggleDropdown'>
     <div class="checkboxtoggler">
       <div class="line-1"></div>
       <div class="line-2"></div>
@@ -10,7 +10,7 @@
   </label>
 </div>
 
-<div id="dropdown_menu">
+<div id="dropdown_menu" data-dropdown-target='menu'>
   <ul>
     <li>Accueil</li>
     <li>Cabinet</li>
