@@ -13,9 +13,9 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/navigation' %>
+    <%= render 'shared/navbar' unless params[:action] == 'construction' %>
+    <%= render 'shared/navigation' unless params[:action] == 'construction' %>
     <%= yield %>
-    <%= render 'shared/footer' %>
+    <%= render 'shared/footer' unless params[:action] == 'construction' %>
   </body>
 </html>
