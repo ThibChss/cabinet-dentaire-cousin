@@ -53,3 +53,18 @@
 .site_map h5 {
   color: $grey-navy;
 }
+
+@media (max-width: 768px) {
+  .footer_container {
+    padding: 40px 60px 10px;
+  }
+
+  .site__infos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .site_map {
+    margin-bottom: 30px;
+  }
+}

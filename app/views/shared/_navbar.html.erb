@@ -1,5 +1,7 @@
 <div class="navbar_container">
-  <%= image_tag 'logo_one.png', alt: "Ortho Châtelet Logo", class: 'logo_navbar' %>
+  <%= link_to home_path do %>
+    <%= image_tag 'logo_one.png', alt: "Ortho Châtelet Logo", class: 'logo_navbar' %>
+  <% end %>
 
   <%# Office details %>
   <div class="info_office">
@@ -29,5 +31,17 @@
         <p>ortho.chatelet@gmail.com</p>
       </div>
     </div>
+  </div>
+
+  <%# Small screen toggle %>
+  <div class='menu_small_screen'>
+    <input id="toggleChecker" type="checkbox">
+    <label id="togglerLable" for="toggleChecker">
+      <div class="checkboxtoggler">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </label>
   </div>
 </div>

@@ -1,0 +1,78 @@
+.banner_pages {
+  background-color: $navy;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    font-size: 45px;
+    color: $clear-blue;
+    text-align: center;
+
+    span {
+      color: $grey-navy;
+    }
+  }
+}
+
+.profiles_container {
+  margin: 50px 150px 0px 150px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.card_profile {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0px 17px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.card_bg {
+  height: 80px;
+  background: #394867;
+  position: relative;
+}
+
+.card_profile_content {
+  padding: 10px;
+
+  h6 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #394867;
+  }
+}
+
+.avatar_profile {
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid #F1F6F9;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+// Min-width: 320px (smaller phone viewpoints)
+// Min-width: 480px (small devices and most phones)
+// Min-width: 768px (most tablets)
+// Min-width: 992px (smaller desktop viewpoints)
+// Min-width: 1200px (large devices and wide screens)
+
+@media (max-width: 480px) {
+  .profiles_container {
+    margin: 50px;
+  }
+}

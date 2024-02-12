@@ -89,3 +89,33 @@
     transition: all .2s ease-out;
   }
 }
+
+@media (max-width: 768px) {
+  .card_container {
+    margin: 80px 20px 0;
+    gap: 30px;
+    flex-direction: column;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .card_content, .card_photo {
+    width: auto;
+  }
+
+  .banner_home_two {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title_banner {
+    width: 100%;
+  }
+
+  .image_banner {
+    width: 100%;
+    border-radius: 50% 0 0 0%;
+  }
+}
