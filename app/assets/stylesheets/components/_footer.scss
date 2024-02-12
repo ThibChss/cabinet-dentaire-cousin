@@ -2,8 +2,8 @@
   background: #161A30;
   color: $clear-blue;
   height: max-content;
-  margin-top: 50px;
-  padding: 40px 150px 10px;
+  margin-top: 80px;
+  padding: 80px 150px 10px;
 }
 
 .site__infos {
@@ -56,12 +56,12 @@
 
 @media (max-width: 768px) {
   .footer_container {
-    padding: 40px 60px 10px;
+    padding: 80px 60px 10px;
   }
 
   .site__infos {
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: start;
   }
 
   .site_map {

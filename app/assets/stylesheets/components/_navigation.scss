@@ -6,8 +6,32 @@
   align-items: center;
 }
 
+.nav_item_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:hover .hover_nav_item {
+    background: $navy;
+    transition: all 0.1s ease-out;
+  }
+}
+
 .nav_item {
   margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hover_nav_item {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 5px;
+  background: transparent;
+  transition: all 0.1s ease-in;
 }
 
 @media (max-width: 768px) {
