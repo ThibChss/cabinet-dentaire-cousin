@@ -46,6 +46,7 @@
   display: flex;
   justify-content: space-between;
   margin: 80px 150px 0 150px;
+
 }
 
 .card_content {
@@ -56,6 +57,10 @@
   background-color: #9BA4B4;
   padding: 20px;
   border-radius: 5px 5px 50% 5px;
+
+  &.video:nth-child(odd) {
+    border-radius: 5px 50% 5px 5px;
+  }
 }
 
 .card_photo {
@@ -99,6 +104,10 @@
     &:nth-child(even) {
       flex-direction: column-reverse;
     }
+  }
+
+  .card_content.video:nth-child(odd) {
+    border-radius: 5px 5px 50% 5px;
   }
 
   .card_content, .card_photo {

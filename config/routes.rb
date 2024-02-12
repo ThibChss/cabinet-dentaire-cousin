@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get :home, to: 'pages#home'
   get :equipe, to: 'pages#team'
+  get :documentation, to: 'pages#documentation'
 end
