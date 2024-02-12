@@ -59,6 +59,7 @@
   width: 110%;
   right: -10px;
   max-height: 0;
+  display: none;
   transition: max-height .2s ease-in;
 
   ul {
@@ -90,5 +91,9 @@
 
   .menu_small_screen {
     display: flex;
+  }
+
+  #dropdown_menu {
+    display: block;
   }
 }
