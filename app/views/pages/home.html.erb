@@ -1,34 +1,19 @@
 <div class="banner_home_two">
-  <h1 class='title_banner'>Des soins dentaires de <span>qualité</span> pour un sourire radieux</h1>
-  <%= image_tag 'office.jpg', alt: "Image d'acceuil", class: 'image_banner' %>
+  <h1 class='title_banner'>
+    Ortho Châtelet
+    <span>Le Sourire d'Orléans</span>
+  </h1>
+  <%= image_tag 'images_office/image_home.jpeg', alt: "Image d'acceuil", class: 'image_banner' %>
 </div>
 
-<div class="card_container">
-  <div class="card_content">
-    <h4>Notre Cabinet</h4>
-    <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat. Deserunt minim commodo do ut mollit sint. Sint ullamco qui id et nulla eu dolor velit consequat.</p>
-    <a class='btn_infos'><p>Plus d'infos</p> <span class="material-symbols-outlined">chevron_right</span></a>
-  </div>
+<div class='home_description'>
+  <h3>Bienvenue au Cabinet d’Orthodontie du Châtelet-Orléans cœur de ville.</h3>
+  <p class='sub_description'>Les docteurs Marianne Boulenguiez et Charles Cousin, ainsi que toute leur équipe sont heureux de vous accueillir sur leur site internet destiné à vous donner les meilleurs informations pédagogiques et conseil sur l’orthodontie.</p>
 
-  <%= image_tag 'banner.jpg', alt: "Photo Cabinet", class: 'card_photo' %>
+  <h5>Où sommes nous ?</h5>
+  <p>Situé au 1 place du Châtelet et plein centre de Orléans, le cabinet vous recevra pour un diagnostic, des conseils et si besoin, une prise en charge orthodontique.</p>
+  <p>Au premier étage du centre commercial, l’accès peut se faire depuis l’entrée Est ( boutique BOUCHARA et EURÊKA), vous aurez alors à prendre l’ascenseur, ou directement depuis le premier étage du parking public du Châtelet.</p>
+  <p>Le cabinet est accessible à tous. Il est conventionné aux normes PMR.</p>
 </div>
 
-<div class="card_container">
-  <%= image_tag 'team.jpg', alt: "Photo Cabinet", class: 'card_photo' %>
-
-  <div class="card_content">
-    <h4>Notre Equipe</h4>
-    <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat. Deserunt minim commodo do ut mollit sint. Sint ullamco qui id et nulla eu dolor velit consequat.</p>
-    <a class='btn_infos' href='/equipe'><p>Plus d'infos</p> <span class="material-symbols-outlined">chevron_right</span></a>
-  </div>
-</div>
-
-<div class="card_container">
-  <div class="card_content">
-    <h4>Documentation</h4>
-    <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat. Deserunt minim commodo do ut mollit sint. Sint ullamco qui id et nulla eu dolor velit consequat.</p>
-    <a class='btn_infos' href='/documentation'><p>Plus d'infos</p> <span class="material-symbols-outlined">chevron_right</span></a>
-  </div>
-
-  <%= image_tag 'documentation.jpg', alt: "Photo Cabinet", class: 'card_photo' %>
-</div>
+<%= render 'cards_home' %>
