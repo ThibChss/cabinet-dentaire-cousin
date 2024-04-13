@@ -52,6 +52,7 @@
   h3,
   h5 {
     margin-bottom: 1.5rem;
+    text-align: initial;
   }
 
   .sub_description {
@@ -60,6 +61,24 @@
 
   p {
     font-size: 18px;
+  }
+
+  &.doc {
+    text-align: justify;
+    padding: 2.5rem 9.5rem;
+
+    p,
+    .list_equipement_item {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &.doc.-b {
+    background-color: transparent;
+  }
+
+  &.-f {
+    padding-top: 5rem;
   }
 
   &.first_container {
@@ -156,13 +175,16 @@
       text-align: justify;
     }
 
-    &.first_container {
+    &.first_container,
+    &.doc {
       padding: 3rem 2rem;
     }
 
     &.second_container {
       padding: 3rem 2rem 0;
     }
+
+
   }
 
   .card_content.video:nth-child(odd) {
