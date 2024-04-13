@@ -19,50 +19,80 @@
 
 .profiles_container {
   margin: 50px 150px 0px 150px;
-  gap: 50px;
-  justify-content: space-between;
+  gap: 0 50px;
+  justify-content: space-around;
+
+  &.collab {
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+}
+
+.title_team {
+  padding: 0;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: $mid-navy;
+
+  &.collab {
+    margin-bottom: 30px;
+  }
 }
 
 .card_profile {
   border-radius: 5px;
-  overflow: hidden;
+  // overflow: hidden;
   box-shadow: 0 0px 17px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
+  // flex-grow: 1;
+  width: 25rem;
+
+  &.collab {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .card_bg {
   height: 80px;
-  background: #394867;
+  background: $mid-navy;
   position: relative;
+  border-radius: 5px 5px 0 0;
 }
 
 .card_profile_content {
-  padding: 20px 20px 10px;
+  padding: 20px 20px;
 
   h6 {
     font-size: 20px;
     margin: 0;
+    text-align: center;
   }
 
-  p:first-child {
+  .work_title {
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
-    color: #394867;
+    color: $mid-navy;
   }
 }
 
-.avatar_profile {
-  width: 70px;
-  border-radius: 50%;
-  border: 3px solid #F1F6F9;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  bottom: -10px;
+.profile_description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.presentation_collab,
+.description_collab {
+  margin-bottom: 100px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.description_collab {
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 // Min-width: 320px (smaller phone viewpoints)
@@ -74,5 +104,9 @@
 @media (max-width: 480px) {
   .profiles_container {
     margin: 50px;
+  }
+
+  .card_profile.-m {
+    margin-bottom: 6rem;
   }
 }

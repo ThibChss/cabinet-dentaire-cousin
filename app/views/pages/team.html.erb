@@ -2,67 +2,89 @@
   <h2>Rencontrer notre <span>équipe</span></h2>
 </div>
 
+
+<%# Container Les Practiciens %>
 <div class="profiles_container row">
-  <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
+  <h2 class='title_team'>Les Practiciens</h2>
+
+  <%# Card Charles Cousin %>
+  <div class="card_profile px-0 -m col-12 col-sm-12 col-md-4 col-lg-3">
     <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
+      <%= image_tag 'images_office/dr_cousin.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
     </div>
     <div class="card_profile_content">
-      <h6>Dr. Charles Cousin</h6>
-      <p>Dentiste Orthondotiste</p>
-      <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat.</p>
+      <h6>Docteur Charles COUSIN</h6>
+      <p class='work_title'>Chirurgien-Dentiste</p>
+
+      <div class='profile_description'>
+        <span><strong>Diplôme :</strong> Diplômée de la faculté de Porto</span>
+        <span><strong>Cetification :</strong> Titulaire du Certificat International Sciences et Cliniques Orthodontiques</span>
+      </div>
     </div>
   </div>
 
+  <%# Card Marianne Boulenguiez %>
   <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
     <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
+      <%= image_tag 'images_office/dr_boulenguiez.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
     </div>
     <div class="card_profile_content">
-      <h6>Dr Caroline Bruyére-Franc</h6>
-      <p>Dentiste Orthondotiste</p>
-      <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat.</p>
+      <h6>Docteur Marianne BOULENGUIEZ</h6>
+      <p class='work_title'>Chirurgien-Dentiste DFMP</p>
+
+      <div class='profile_description'>
+        <span><strong>Spécialisation :</strong> Spécialiste qualifiée en Orthopédie-Dento-Faciale</span>
+        <span><strong>Cetification :</strong> Certificat d’étude Clinique spécial mention Orthodontie</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# Container Les Collaboratrices %>
+<div class="profiles_container collab row">
+  <h2 class='title_team collab'>Les Collaboratrices</h2>
+
+  <p class='presentation_collab'>Vanessa, Noémie et Syndie sont toutes les trois des assistantes dentaires qualifiées, formées au numérique, a l’orthodontie fixe et invisible.</p>
+
+  <%# Card Noemie %>
+  <div class="card_profile collab -m px-0 col-12 col-sm-12 col-md-4 col-lg-3">
+    <div class="card_bg">
+      <%= image_tag 'images_office/noemie.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
+    </div>
+    <div class="card_profile_content">
+      <h6>Noémie</h6>
+      <p class='work_title'>Assistante Dentaire</p>
     </div>
   </div>
 
-  <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
+  <%# Card Syndie %>
+  <div class="card_profile collab -m px-0 col-12 col-sm-12 col-md-4 col-lg-3">
     <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
+      <%= image_tag 'images_office/syndie.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
     </div>
     <div class="card_profile_content">
-      <h6>Dr. Marianne Boulenguiez</h6>
-      <p>Dentiste Orthondotiste</p>
-      <p>Deserunt cupidatat voluptate irure voluptate fugiat duis ullamco sunt commodo adipisicing enim labore occaecat.</p>
+      <h6>Syndie</h6>
+      <p class='work_title'>Assistante Dentaire</p>
     </div>
   </div>
 
-  <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
+  <%# Card Vanessa %>
+  <div class="card_profile collab px-0 col-12 col-sm-12 col-md-4 col-lg-3">
     <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
+      <%= image_tag 'images_office/vanessa.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
     </div>
     <div class="card_profile_content">
-      <h6>Jane Doe</h6>
-      <p>Assistante</p>
+      <h6>Vanessa</h6>
+      <p class='work_title'>Assistante Dentaire</p>
     </div>
   </div>
 
-  <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
-    <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
-    </div>
-    <div class="card_profile_content">
-      <h6>Jane Doe</h6>
-      <p>Assistante</p>
-    </div>
-  </div>
-
-  <div class="card_profile px-0 col-12 col-sm-12 col-md-4 col-lg-3">
-    <div class="card_bg">
-      <%= image_tag 'placeholder.jpg', alt: "Photo Docteur", class: 'avatar_profile' %>
-    </div>
-    <div class="card_profile_content">
-      <h6>Jane Doe</h6>
-      <p>Assistante</p>
-    </div>
-  </div>
+  <p class="description_collab">
+    Professionnelles, elles sont <strong>garantes de l’asepsie du cabinet</strong>, du
+    <strong>suivi des patients</strong> et de toutes les explications des différents
+    traitements proposés.
+    Elles aideront les plus jeunes et tous les autres, à acquérir une super
+    <strong>hygiène-bucco dentaire</strong> et à coopérer pour un bon déroulement du
+    traitement.
+  </p>
 </div>
