@@ -49,7 +49,8 @@
   background-color: $grey-navy;
   padding: 5rem 9.5rem;
 
-  h3, h5 {
+  h3,
+  h5 {
     margin-bottom: 1.5rem;
   }
 
@@ -65,7 +66,7 @@
 .card_container {
   display: flex;
   justify-content: space-between;
-  margin: 80px 150px 0 150px;
+  margin: 80px 150px 150px 150px;
   height: 300px;
 }
 
@@ -79,16 +80,27 @@
   border-radius: 5px 5px 50% 5px;
   gap: 20px;
 
-  &.video:nth-child(odd) {
+  &:nth-child(odd) {
+    border-radius: 5px 50% 5px 5px;
+  }
+
+  &.video:nth-child(even) {
     border-radius: 5px 50% 5px 5px;
   }
 }
 
 .card_photo {
+  object-fit: contain;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.card_photo_fill {
   width: 45%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px 50% 5px 5px;
-  height: 35dvh;
 }
 
 .btn_infos {
@@ -118,8 +130,8 @@
 
 @media (max-width: 768px) {
   .card_container {
-    margin: 80px 20px 0;
-    gap: 30px;
+    margin: 30px 20px 0;
+    gap: 0;
     flex-direction: column;
     height: auto;
 
@@ -130,6 +142,7 @@
 
   .home_description {
     padding: 3rem 2rem;
+
     p {
       text-align: justify;
     }
@@ -139,8 +152,17 @@
     border-radius: 5px 5px 50% 5px;
   }
 
-  .card_content, .card_photo {
+  .card_content,
+  .card_photo_fill {
     width: auto;
+  }
+
+  .card_content {
+    border-radius: 5px 5px 50% 5px;
+
+    &:nth-child(odd) {
+      border-radius: 5px 5px 50% 5px;
+    }
   }
 
   .banner_home_two {
