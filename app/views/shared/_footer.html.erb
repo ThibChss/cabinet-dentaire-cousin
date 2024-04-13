@@ -27,7 +27,7 @@
     <%# WEBSITE MAP %>
     <div class="site_map">
       <h5>Plan Du Site</h5>
-      <p>Accueil</p>
+      <p>Notre Equipe</p>
       <p>Le Cabinet</p>
       <p>Documentation</p>
       <p>Contact</p>
@@ -35,4 +35,8 @@
   </div>
 
   <div class='copyright_footer'>&#169; Copyright <a href="https://www.ortho-chatelet.com/">Ortho Chatelet</a> | Site réalisé par <a href="https://www.linkedin.com/in/thibault-chassine-772070a5/">Thibault Chassine</a></div>
+
+  <% if params[:action] == 'home' %>
+    <div class='copyright_footer'><a href="https://storyset.com/business">Business illustrations by Storyset</a></div>
+  <% end %>
 </div>

@@ -77,6 +77,7 @@
   background-color: #9BA4B4;
   padding: 20px;
   border-radius: 5px 5px 50% 5px;
+  gap: 20px;
 
   &.video:nth-child(odd) {
     border-radius: 5px 50% 5px 5px;
@@ -122,7 +123,7 @@
     flex-direction: column;
     height: auto;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       flex-direction: column-reverse;
     }
   }
