@@ -44,7 +44,18 @@
 <div class="profiles_container collab row">
   <h2 class='title_team collab'>Les Collaboratrices</h2>
 
-  <p class='presentation_collab'>Vanessa, Noémie et Syndie sont toutes les trois des assistantes dentaires qualifiées, formées au numérique, a l’orthodontie fixe et invisible.</p>
+  <p class='presentation_collab'>Vanessa, Noémie et Syndie sont toutes les trois des assistantes dentaires qualifiées, formées au numérique, à l’orthodontie fixe et invisible.</p>
+
+  <%# Card Vanessa %>
+  <div class="card_profile collab px-0 col-12 col-sm-12 col-md-4 col-lg-3">
+    <div class="card_bg">
+      <%= image_tag 'images_office/vanessa.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
+    </div>
+    <div class="card_profile_content">
+      <h6>Vanessa</h6>
+      <p class='work_title'>Assistante Dentaire</p>
+    </div>
+  </div>
 
   <%# Card Noemie %>
   <div class="card_profile collab -m px-0 col-12 col-sm-12 col-md-4 col-lg-3">
@@ -64,17 +75,6 @@
     </div>
     <div class="card_profile_content">
       <h6>Syndie</h6>
-      <p class='work_title'>Assistante Dentaire</p>
-    </div>
-  </div>
-
-  <%# Card Vanessa %>
-  <div class="card_profile collab px-0 col-12 col-sm-12 col-md-4 col-lg-3">
-    <div class="card_bg">
-      <%= image_tag 'images_office/vanessa.jpeg', alt: "Photo Docteur", class: 'avatar_profile' %>
-    </div>
-    <div class="card_profile_content">
-      <h6>Vanessa</h6>
       <p class='work_title'>Assistante Dentaire</p>
     </div>
   </div>
