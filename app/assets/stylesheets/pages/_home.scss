@@ -61,6 +61,15 @@
   p {
     font-size: 18px;
   }
+
+  &.first_container {
+    padding: 5rem 9.5rem 2.5rem;
+  }
+
+  &.second_container {
+    background-color: transparent;
+    padding: 2.5rem 9.5rem;
+  }
 }
 
 .card_container {
@@ -145,6 +154,14 @@
 
     p {
       text-align: justify;
+    }
+
+    &.first_container {
+      padding: 3rem 2rem;
+    }
+
+    &.second_container {
+      padding: 3rem 2rem 0;
     }
   }
 

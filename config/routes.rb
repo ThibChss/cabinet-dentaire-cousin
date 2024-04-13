@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   # get :accueil, to: 'pages#home'
   get :equipe, to: 'pages#team'
-  get :documentation, to: 'pages#documentation'
-  get :cabinet, to: 'pages#office'
+  get 'informations-pratiques', to: 'pages#documentation'
+  get :equipement, to: 'pages#office'
 end
