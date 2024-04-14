@@ -169,7 +169,11 @@
   }
 
   .home_description {
-    padding: 48px 2rem;
+    padding: 3rem 2rem;
+
+    &.--browser {
+      padding: 8rem 2rem;
+    }
 
     p {
       text-align: justify;
@@ -177,11 +181,11 @@
 
     &.first_container,
     &.doc {
-      padding: 48px 2rem;
+      padding: 3rem 2rem;
     }
 
     &.second_container {
-      padding: 48px 2rem 0;
+      padding: 3rem 2rem 0;
     }
 
 
