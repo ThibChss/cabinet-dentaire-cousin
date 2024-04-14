@@ -9,12 +9,9 @@ SitemapGenerator::Sitemap.create do
   # The root path '/' and sitemap index file are added automatically for you.
   # Links are added to the Sitemap in the order they are specified.
 
-  add equipe_path, changefreq: 'monthly', lastmod: Time.now,
-                   priority: 0.9
-  add equipement_path, changefreq: 'monthly', lastmod: Time.now,
-                       priority: 0.5
-  add informations_pratiques_path, changefreq: 'monthly', lastmod: Time.now,
-                                   priority: 0.7
+  add equipe_path
+  add equipement_path
+  add informations_pratiques_path
 
   # Usage: add(path, options={})
   #        (default options are used if you don't specify)
