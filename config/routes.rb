@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
+  # Static pages
   get :equipe, to: 'pages#team'
   get 'informations-pratiques', to: 'pages#documentation'
   get :equipement, to: 'pages#office'
@@ -8,4 +9,6 @@ Rails.application.routes.draw do
 
   # For site map
   get '/sitemap.xml', to: 'sitemap#index', defaults: { format: 'xml' }
+
+  # For errors
 end
