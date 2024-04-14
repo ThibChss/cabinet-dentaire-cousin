@@ -169,7 +169,7 @@
   }
 
   .home_description {
-    padding: 48px 2rem;
+    padding: 5rem 2rem;
 
     p {
       text-align: justify;
@@ -177,11 +177,11 @@
 
     &.first_container,
     &.doc {
-      padding: 48px 2rem;
+      padding: 3rem 2rem;
     }
 
     &.second_container {
-      padding: 48px 2rem 0;
+      padding: 3rem 2rem 0;
     }
 
 
@@ -206,11 +206,12 @@
 
   .banner_home_two {
     flex-direction: column;
-    gap: 30px;
+    // gap: 30px;
   }
 
   .title_banner {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   .image_banner {
