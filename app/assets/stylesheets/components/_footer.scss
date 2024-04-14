@@ -50,8 +50,15 @@
   }
 }
 
-.site_map h5 {
-  color: $grey-navy;
+.site_map {
+  h5 {
+    color: $grey-navy;
+  }
+
+  p > a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 768px) {

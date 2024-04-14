@@ -6,7 +6,7 @@
   <%= image_tag 'images_office/image_home.jpeg', alt: "Image d'acceuil", class: 'image_banner' %>
 </div>
 
-<div class='home_description <%= @browser ? '--browser' : '' %>'>
+<div class='home_description <%= @check_browser && @check_mobile ? '--browser' : '' %>'>
   <h3>Bienvenue au Cabinet d’Orthodontie du Châtelet-Orléans cœur de ville.</h3>
   <p class='sub_description'>Les docteurs Marianne Boulenguiez et Charles Cousin, ainsi que toute leur équipe sont heureux de vous accueillir sur leur site internet destiné à vous donner les meilleurs informations pédagogiques et conseil sur l’orthodontie.</p>
 
