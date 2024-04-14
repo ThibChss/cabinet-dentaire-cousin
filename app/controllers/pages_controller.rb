@@ -75,8 +75,5 @@ class PagesController < ApplicationController
 
   def google_verification
     render html: 'google-site-verification: googled6e4167a4d6e5023.html'
-    # headers['Content-Type'] = 'text/html'
-
-    # render 'googled6e4167a4d6e5023'
   end
 end
