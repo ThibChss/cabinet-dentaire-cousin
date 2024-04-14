@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get :equipe, to: 'pages#team'
   get 'informations-pratiques', to: 'pages#documentation'
   get :equipement, to: 'pages#office'
+
+  # For site map
+  get '/sitemap.xml', to: 'sitemap#index', defaults: { format: 'xml' }
 end
