@@ -72,4 +72,8 @@ class PagesController < ApplicationController
       keywords: KEYWORDS_DOCUMENTATION.join(", ")
     )
   end
+
+  def google_verification
+    render plain: "google-site-verification: googleb4e2b0c6f4b2d5e2.html"
+  end
 end
