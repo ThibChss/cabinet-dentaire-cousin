@@ -1,7 +1,7 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "https://www.ortho-chatelet.com"
 
-# SitemapGenerator::Sitemap.create_index = :auto
+SitemapGenerator::Sitemap.create_index = :auto
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
