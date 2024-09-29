@@ -84,6 +84,12 @@
   transition: max-height .2s ease-out;
 }
 
+.link_home_navbar {
+  text-decoration: none;
+  color: #14274E;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .info_office {
     display: none;
