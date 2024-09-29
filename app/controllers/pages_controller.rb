@@ -71,6 +71,10 @@ class PagesController < ApplicationController
                     sourires radieux et une meilleure santé bucco-dentaire.",
       keywords: KEYWORDS_DOCUMENTATION.join(", ")
     )
+
+    @images = %w[appareils/accessoire_orthondotique.jpeg appareils/aligneur.jpeg appareils/appareil_contention.jpeg
+                 appareils/appareil_expention.jpeg appareils/appareil_finition.jpeg
+                 appareils/appareil_fonctionnel.jpeg appareils/appareil_multitache.jpeg]
   end
 
   def google_verification

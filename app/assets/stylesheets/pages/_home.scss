@@ -24,6 +24,12 @@
   border-radius: 50% 0 0 50%;
 }
 
+.image_banner_two {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .title_banner {
   color: $clear-blue;
   font-size: 50px;
@@ -94,7 +100,7 @@
 .card_container {
   display: flex;
   justify-content: space-between;
-  margin: 80px 150px 150px 150px;
+  margin: 150px 150px 150px 150px;
   height: 300px;
 }
 
@@ -209,7 +215,7 @@
   }
 
   .banner_home_two {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 30px;
   }
 
@@ -220,5 +226,9 @@
   .image_banner {
     width: 100%;
     border-radius: 50% 0 0 0%;
+  }
+
+  .image_banner_two {
+    width: 100%;
   }
 }
