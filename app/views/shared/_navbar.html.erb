@@ -1,7 +1,5 @@
 <div class="navbar_container" data-controller='dropdown'>
-  <%= link_to root_path do %>
-    <%= image_tag 'images_office/logo_v2.png', alt: "Ortho Châtelet Logo", class: 'logo_navbar' %>
-  <% end %>
+  <div><%= link_to 'Ortho Châtelet', root_path, class: 'link_home_navbar'  %></div>
 
   <%# Office details %>
   <div class="info_office">
@@ -18,8 +16,7 @@
     <div class="office_details">
       <span class="material-symbols-outlined">schedule</span>
       <div class="office__detail">
-        <p><strong>Mar - Mer - Ven : 08:30 - 12:00 | 14:00 - 18:00</strong></p>
-        <p>Jeu : 09:00 - 12:00</p>
+        <p><strong>Lun - Ven : 09:00 - 12:30 | 14:00 - 17:30</strong></p>
       </div>
     </div>
 

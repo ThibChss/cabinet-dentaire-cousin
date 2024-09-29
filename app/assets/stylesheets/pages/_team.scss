@@ -10,11 +10,21 @@
     font-size: 45px;
     color: $clear-blue;
     text-align: center;
+    flex-grow: 1;
 
     span {
       color: $grey-navy;
     }
   }
+}
+
+.banner_pages.team {
+  justify-content: space-between;
+  height: 700px;
+}
+
+.image_banner.team {
+  border-radius: 50% 0 0 0%;
 }
 
 .profiles_container {
@@ -108,5 +118,13 @@
 
   .card_profile.-m {
     margin-bottom: 6rem;
+  }
+
+  .banner_pages.team {
+    height: 350px;
+  }
+
+  .image_banner.team {
+    display: none;
   }
 }
