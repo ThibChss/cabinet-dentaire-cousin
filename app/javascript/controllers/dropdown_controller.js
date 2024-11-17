@@ -8,6 +8,7 @@ export default class extends Controller {
     'menu',
     'burger'
   ]
+
   connect() {
     useClickOutside(this)
   }

@@ -3,6 +3,8 @@ require "browser/aliases"
 class PagesController < ApplicationController
   Browser::Base.include(Browser::Aliases)
 
+  before_action :set_browsers
+
   KEYWORDS_HOME = %w[Orthodontie\ Orléans Cabinet\ dentaire\ Orléans Soins\ orthodontiques Appareils\ dentaires Correction\ dentaire
                 Braces\ Orléans Alignement\ des\ dents Orthodontiste\ Orléans Santé\ bucco-dentaire Sourire\ parfait Traitements\ orthodontiques
                 Orthodontie\ pour\ enfants\ et\ adultes Services\ dentaires\ Orléans Consultation\ orthodontique Spécialiste\ en\ orthodontie
@@ -29,8 +31,6 @@ class PagesController < ApplicationController
   def construction; end
 
   def home
-    @browser = Browser.new(request.user_agent)
-
     set_meta_tags(
       title: "Accueil",
       description: "Bienvenue au Cabinet d’Orthodontie du Châtelet-Orléans cœur de ville. Les docteurs Marianne Boulenguiez et
@@ -38,9 +38,6 @@ class PagesController < ApplicationController
                     les meilleurs informations pédagogiques et conseil sur l’orthodontie.",
       keywords: KEYWORDS_HOME.join(", ")
     )
-
-    @check_browser = @browser.chrome? || @browser.safari? || @browser.edge?
-    @check_mobile = @browser.mobile?
   end
 
   def team
@@ -72,12 +69,27 @@ class PagesController < ApplicationController
       keywords: KEYWORDS_DOCUMENTATION.join(", ")
     )
 
-    @images = %w[appareils/accessoire_orthondotique.jpeg appareils/aligneur.jpeg appareils/appareil_contention.jpeg
-                 appareils/appareil_expention.jpeg appareils/appareil_finition.jpeg
-                 appareils/appareil_fonctionnel.jpeg appareils/appareil_multitache.jpeg]
+    @images = {
+      'Accessoire orthodontique' => 'appareils/accessoire_orthondotique.jpg',
+      'Aligneur' => 'appareils/aligneur.jpg',
+      'Appareil de contention' => 'appareils/appareil_contention.jpg',
+      "Appareil d'expansion" => 'appareils/appareil_expention.jpg',
+      'Appareil de finition' => 'appareils/appareil_finition.jpg',
+      'Appareil fonctionnel' => 'appareils/appareil_fonctionnel.webp',
+      'Appareil multitâche' => 'appareils/appareil_multitache.webp'
+    }
   end
 
   def google_verification
     render html: 'google-site-verification: googled6e4167a4d6e5023.html'
+  end
+
+  private
+
+  def set_browsers
+    @browser = Browser.new(request.user_agent)
+
+    @check_browser = @browser.chrome? || @browser.safari? || @browser.edge?
+    @check_mobile = @browser.mobile?
   end
 end

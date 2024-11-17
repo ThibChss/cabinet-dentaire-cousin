@@ -101,88 +101,144 @@
   </p>
 </div>
 
-<div class='home_description doc -b'>
+<div class='home_description doc -b' data-controller='anchor-selector'>
   <h3>Les Différents appareils orthodontiques</h3>
 
-  <h5 class='sub_title_info'>L’appareil multiattache :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Des attaches aussi appelées Brackets sont collées sur la face externe ou interne des dents. Elles permettent de poser un fil semi
-    rigide : arc qui est à l’origine du mouvement dentaire.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Il est parfois nécessaire de poser des vraies bagues le plus souvent sur les molaires : elles font le tour de la dent et peuvent recevoir
-    d’autre éléments que l’arc et ou les élastiques.
-  </span>
+  <%= render 'image_tabs', images: @images %>
 
-  <h5 class='sub_title_info'>Les gouttières ou Aligners :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Les progrès du numérique ont permis de traiter les patients avec des séries de gouttières amovibles transparentes.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Le résultat est similaire à celui des attaches mais présentent un avantage esthétique majeur.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Elles sont particulièrement précipitées par les adultes, mais aussi par quelques enfants et adolescents.
-  </span>
 
-  <h5 class='sub_title_info'>Les appareils fonctionnels :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Ils permettent de corriger des décalages entre les deux mâchoires.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Favorisant le bon développement des mâchoires, ils sont particulièrement interessants pour des enfants en période de croissance.
-    Ils peuvent être portés dès le plus jeune âge, vers 3 à 4 ans).
-  </span>
+<%# {
+      'Accessoire orthodontique' => 'appareils/accessoire_orthondotique.jpg',
+      'Aligneur' => 'appareils/aligneur.jpg',
+      'Appareil de contention' => 'appareils/appareil_contention.jpg',
+      "Appareil d'expansion" => 'appareils/appareil_expention.jpg',
+      'Appareil de finition' => 'appareils/appareil_finition.jpg',
+      'Appareil fonctionnel' => 'appareils/appareil_fonctionnel.webp',
+      'Appareil multitâche' => 'appareils/appareil_multitache.webp'
+    } %>
 
-  <h5 class='sub_title_info'>Les appareils d’expansion :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Pour les palais trop étroits, les mâchoires trop petites, ces appareils fixes ou amovibles permettre une expansion, libérant ainsi de la
-    place pour la mise en place des dents lors de la croissance ou simplement l’adaptation des mâchoires entre elles.
-  </span>
 
-  <h5 class='sub_title_info'>Les accessoires orthodontistes :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Les élastiques intermaxillaires , les minivis, l’enveloppe linguale nocture sont des aides précieuses et souvent indispensables au
-    déroulement du traitement.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Les force extra-orales souvent vues dans les dessins animés ou autre film ( Némo, Charly et la chocolaterie par exemple), peuvent aujourd’hui
-    être le plus souvent remplacées par d’autres méthodes. Seuls quelques cas particuliers nécessitent un appui extra-oral amovible pour
-    l’appareil orthodontie.
-  </span>
+  <div class="description_container" id="appareil-multitache" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/appareil_multitache.webp' %>')">
+      <h5 id="title_card_doc"><%= 'Appareil multitâche' %></h5>
+    </div>
 
-  <h5 class='sub_title_info'>Les appareils de finitions :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Ce sont des appareils élastomériques amovibles qui devront être portés pendant une courte durée ( 3/4 mois) et permettront aux dents de
-    mastiquer librement tout en étant « surveillées » par l’appareillage la nuit et quelques heures dans la journée.
-  </span>
+    <h5 class='title_documentation_desktop'>L’appareil multiattache :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Des attaches aussi appelées Brackets sont collées sur la face externe ou interne des dents. Elles permettent de poser un fil semi
+      rigide : arc qui est à l’origine du mouvement dentaire.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Il est parfois nécessaire de poser des vraies bagues le plus souvent sur les molaires : elles font le tour de la dent et peuvent recevoir
+      d’autre éléments que l’arc et ou les élastiques.
+    </span>
+  </div>
 
-  <h5 class='sub_title_info'>Les appareils de contention :</h5>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Ces appareils sont utilisés en prolongement du traitement orthodontie afin d’en consolider le résultat.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    C’est une période essentielle à respecter pour le maintien du bénéfice acquis.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Les appareil de contention fixes sont des attelles collées sur l’intérieur des dents antérieures.
-  </span>
-  <span class='list_equipement_item'>
-    <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
-    Les appareils de contention amovibles sont des gouttières, des plaques.
-  </span>
+  <div class="description_container" id="aligneur" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/aligneur.jpg' %>')">
+      <h5 id="title_card_doc"><%= 'Aligneurs' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les gouttières ou Aligners :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Les progrès du numérique ont permis de traiter les patients avec des séries de gouttières amovibles transparentes.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Le résultat est similaire à celui des attaches mais présentent un avantage esthétique majeur.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Elles sont particulièrement précipitées par les adultes, mais aussi par quelques enfants et adolescents.
+    </span>
+  </div>
+
+  <div class="description_container" id="appareil-fonctionnel" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/appareil_fonctionnel.webp' %>')">
+      <h5 id="title_card_doc"><%= 'Appareil fonctionnel' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les appareils fonctionnels :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Ils permettent de corriger des décalages entre les deux mâchoires.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Favorisant le bon développement des mâchoires, ils sont particulièrement interessants pour des enfants en période de croissance.
+      Ils peuvent être portés dès le plus jeune âge, vers 3 à 4 ans).
+    </span>
+  </div>
+
+  <div class="description_container" id="appareil-d-expansion" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/appareil_expention.jpg' %>')">
+      <h5 id="title_card_doc"><%= 'Appareil d\'expansion' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les appareils d’expansion :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Pour les palais trop étroits, les mâchoires trop petites, ces appareils fixes ou amovibles permettre une expansion, libérant ainsi de la
+      place pour la mise en place des dents lors de la croissance ou simplement l’adaptation des mâchoires entre elles.
+    </span>
+  </div>
+
+  <div class="description_container" id="accessoire-orthodontique" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/accessoire_orthondotique.jpg' %>')">
+      <h5 id="title_card_doc"><%= 'Accessoire orthodontique' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les accessoires orthodontiques :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Les élastiques intermaxillaires , les minivis, l’enveloppe linguale nocture sont des aides précieuses et souvent indispensables au
+      déroulement du traitement.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Les force extra-orales souvent vues dans les dessins animés ou autre film (Némo, Charlie et la Chocolaterie par exemple), peuvent aujourd’hui
+      être le plus souvent remplacées par d’autres méthodes. Seuls quelques cas particuliers nécessitent un appui extra-oral amovible pour
+      l’appareil orthodontie.
+    </span>
+  </div>
+
+  <div class="description_container" id="appareil-de-finition" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/appareil_finition.jpg' %>')">
+      <h5 id="title_card_doc"><%= 'Appareil de finition' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les appareils de finitions :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Ce sont des appareils élastomériques amovibles qui devront être portés pendant une courte durée ( 3/4 mois) et permettront aux dents de
+      mastiquer librement tout en étant « surveillées » par l’appareillage la nuit et quelques heures dans la journée.
+    </span>
+  </div>
+
+  <div class="description_container" id="appareil-de-contention" data-anchor-selector-target='anchor'>
+    <div class="bg_image_doc_mobile" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path 'appareils/appareil_contention.jpg' %>')">
+      <h5 id="title_card_doc"><%= 'Appareil de contention' %></h5>
+    </div>
+
+    <h5 class='title_documentation_desktop'>Les appareils de contention :</h5>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Ces appareils sont utilisés en prolongement du traitement orthodontie afin d’en consolider le résultat.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      C’est une période essentielle à respecter pour le maintien du bénéfice acquis.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Les appareil de contention fixes sont des attelles collées sur l’intérieur des dents antérieures.
+    </span>
+    <span class='list_equipement_item'>
+      <span class="material-symbols-outlined arrow_list">arrow_right_alt</span>
+      Les appareils de contention amovibles sont des gouttières, des plaques.
+    </span>
+  </div>
 </div>
