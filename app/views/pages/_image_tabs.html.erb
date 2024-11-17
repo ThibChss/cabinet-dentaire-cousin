@@ -1,0 +1,27 @@
+<%# <div class="image_container_documentation"> %>
+  <%# images.each do |image| %>
+    <%#= image_tag image, alt: image, class: 'image_doc' %>
+  <%# end %>
+<%# </div> %>
+
+<%# <div class="image_container_documentation"> %>
+  <%# images.each do |name, image| %>
+    <%# <div style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= image_path image')" class="bg_image_doc"> %>
+      <%#= link_to "##{name.parameterize}" do %>
+      <%# end %>
+    <%# </div> %>
+  <%# end %>
+<%# </div> %>
+
+<div class="image_container_documentation">
+  <% images.each do |name, image| %>
+    <%= link_to "##{name.parameterize}", class: "bg_image_doc",
+                                         style: "background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('#{image_path(image)}')",
+                                         data: {
+                                          id_target: name.parameterize,
+                                          action: 'click->anchor-selector#selectAnchor'
+                                         } do %>
+      <h5 id="title_card_doc"><%= name %></h5>
+    <% end %>
+  <% end %>
+</div>
